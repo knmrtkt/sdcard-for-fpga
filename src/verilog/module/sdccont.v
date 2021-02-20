@@ -953,7 +953,7 @@ module sd_controller_spi(
     end
     endfunction
 
-    wire w_crc7_en  = (state == SEND_CMD) && (cmd_bit_counter <= 39) && sclk;
+    wire w_crc7_en  = (state == SEND_CMD) && (cmd_bit_counter <= 39) && sd_clk;
     wire w_crc7_rst = i_rst | (state == SEND_CRC7);
     wire w_crc7_dat = cmd_out[39];
 
