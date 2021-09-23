@@ -26,7 +26,7 @@ module top_nexys4ddr(
     localparam  TEST_SDCRAM  = 1;
     localparam  WRITE_SDCARD = 2;
 
-    localparam  MODULE_TYPE = WRITE_SDCARD;
+    localparam  MODULE_TYPE = TEST_SDCRAM;
 
     wire CLK;
     wire RST = ~w_cpu_rst;
